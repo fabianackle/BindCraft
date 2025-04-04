@@ -1,0 +1,33 @@
+name: BindCraft
+channels:
+  - conda-forge
+  - nvidia
+  - conda.graylab.jhu.edu
+dependencies:
+  - pip
+  - pandas
+  - matplotlib
+  - numpy<2.0.0
+  - biopython 
+  - scipy
+  - pdbfixer
+  - seaborn 
+  - libgfortran5 
+  - tqdm
+  - jupyter
+  - ffmpeg
+  - pyrosetta
+  - fsspec
+  - py3dmol
+  - chex
+  - dm-haiku
+  - flax<0.10.0
+  - dm-tree
+  - joblib
+  - ml-collections
+  - immutabledict
+  - optax
+  - jaxlib 
+  - jax
+  - cuda-nvcc
+  - cudnn 

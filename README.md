@@ -14,7 +14,9 @@ The navigate into your install folder using *cd* and run the installation code. 
 
 Note: This install script will install PyRosetta, which requires a license for commercial purposes. The code requires about 2 Mb of storage space, while the AlphaFold2 weights take up about 5.3 Gb.
 
-`bash install_bindcraft.sh --cuda '12.4' --pkg_manager 'conda'`
+`mamba create -f BindCraft.yml`
+
+`bash install_bindcraft.sh`
 
 ## Google Colab
 <a href="https://colab.research.google.com/github/martinpacesa/BindCraft/blob/main/notebooks/BindCraft.ipynb">
