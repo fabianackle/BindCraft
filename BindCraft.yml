@@ -27,7 +27,7 @@ dependencies:
   - ml-collections
   - immutabledict
   - optax
-  - jaxlib 
+  - jaxlib=*=*cuda*
   - jax
   - cuda-nvcc
   - cudnn 
