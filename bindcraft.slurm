@@ -2,7 +2,7 @@
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 4
-#SBATCH --gpus=H100:1
+#SBATCH --gpus=1
 #SBATCH --mem 48gb
 #SBATCH --time 12:00:00
 #SBATCH --output=bindcraft_%A.log
@@ -14,9 +14,6 @@ module load mamba
 eval "$(conda shell.bash hook)"
 conda activate BindCraft
 CONDA_BASE=$(conda info --base)
-
-# Get the directory where the bindcraft script is located
-SCRIPT_DIR=$(dirname "$0")
 
 # Parsing command line options
 SETTINGS=""
@@ -42,4 +39,4 @@ if [ -z "$SETTINGS" ]; then
 fi
 
 echo "Running the BindCraft pipeline"
-python -u "${SCRIPT_DIR}/bindcraft.py" --settings "${SETTINGS}" --filters "${FILTERS}" --advanced "${ADVANCED}"
+python -u ./bindcraft.py --settings "${SETTINGS}" --filters "${FILTERS}" --advanced "${ADVANCED}"
