@@ -2,7 +2,7 @@ name: BindCraft
 channels:
   - conda-forge
   - nvidia
-  - conda.graylab.jhu.edu
+  - https://conda.graylab.jhu.edu
 dependencies:
   - pip
   - pandas
