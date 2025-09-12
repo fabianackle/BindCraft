@@ -1,4 +1,7 @@
 # BindCraft
+>[!IMPORTANT]
+>This repo adapts Martin Pacesa's BindCraft for use on the S3IT UZH cluster. The installation script was modified, please install the BindCraft environment manually via an interactive session into a shared folder.
+
 ![alt text](https://github.com/martinpacesa/BindCraft/blob/main/pipeline.png?raw=true)
 
 Simple binder design pipeline using AlphaFold2 backpropagation, MPNN, and PyRosetta. Select your target and let the script do the rest of the work and finish once you have enough designs to order!
@@ -20,7 +23,7 @@ Note: This install script will install PyRosetta, which requires a license for c
 
 `module load mamba`
 
-`mamba env create -f BindCraft.yml`
+`mamba env create -f BindCraft.yml --prefix /shares/seeger.imm.uzh/BindCraft-env
 
 `bash install_bindcraft.sh`
 

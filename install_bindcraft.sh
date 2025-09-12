@@ -4,7 +4,7 @@
 # Activating bindcraft environment
 module load mamba
 eval "$(conda shell.bash hook)"
-conda activate BindCraft
+conda activate /shares/seeger.imm.uzh/BindCraft-env
 
 
 ############################################################################################################

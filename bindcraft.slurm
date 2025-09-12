@@ -12,7 +12,7 @@
 # Initialise environment and modules
 module load mamba
 eval "$(conda shell.bash hook)"
-conda activate BindCraft
+conda activate /shares/seeger.imm.uzh/BindCraft-env
 CONDA_BASE=$(conda info --base)
 
 # Parsing command line options
