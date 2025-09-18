@@ -2,8 +2,9 @@
 #SBATCH --nodes 1
 #SBATCH --ntasks 1
 #SBATCH --cpus-per-task 4
-#SBATCH --gpus=1
 #SBATCH --mem 48gb
+#SBATCH --gpus=1
+#SBATCH --constraint="GPUMEM32GB|GPUMEM80GB
 #SBATCH --time 12:00:00
 #SBATCH --output=bindcraft_%A.log
 ##SBATCH --mail-user=user@example.com
