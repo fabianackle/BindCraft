@@ -23,7 +23,7 @@ Note: This install script will install PyRosetta, which requires a license for c
 
 `module load mamba`
 
-`mamba env create -f BindCraft.yml --prefix /shares/seeger.imm.uzh/BindCraft-env
+`mamba env create -f BindCraft.yml --prefix /shares/seeger.imm.uzh/BindCraft-env`
 
 `bash install_bindcraft.sh`
 
